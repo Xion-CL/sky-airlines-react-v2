@@ -1,19 +1,59 @@
 /* ============================================
-   ESTILOS BASE
+   LAYOUT PRINCIPAL - STICKY FOOTER (FORZADO)
    ============================================ */
-.App {
-  text-align: center;
+
+html {
+  height: 100% !important;
 }
 
 body {
-  margin: 0;
+  min-height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+  width: 100% !important;
+}
+
+.App {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  flex: 1 !important;
+  width: 100% !important;
+}
+
+main {
+  flex: 1 0 auto !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.site-footer {
+  flex-shrink: 0 !important;
+  margin-top: auto !important;
+  width: 100% !important;
+}
+
 /* ============================================
-   BANNER / CARRUSEL - CON IMÁGENES LOCALES
+   ESTILOS BASE
+   ============================================ */
+
+/* ... (mantén el resto de tu CSS aquí abajo: banner, carrusel, feature-boxes, responsive, etc.) */
+
+/* ============================================
+   BANNER / CARRUSEL
    ============================================ */
 .banner-slide {
   height: 600px;
@@ -26,7 +66,6 @@ body {
   position: relative;
 }
 
-/* IMÁGENES LOCALES - DESCOMENTADO */
 .banner-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
               url('/images/banner1.jpg');
@@ -42,7 +81,6 @@ body {
               url('/images/banner3.jpg');
 }
 
-/* Caption del carrusel */
 .carousel-caption {
   position: absolute;
   top: 50%;
@@ -70,7 +108,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Carrusel */
 .carousel-inner {
   max-height: 600px;
 }

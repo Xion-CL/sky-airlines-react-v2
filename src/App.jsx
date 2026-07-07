@@ -21,9 +21,13 @@ function App() {
   return (
     <AuthProvider>
       <Router basename={process.env.PUBLIC_URL}>
-        <div className="App">
+        <div className="App" style={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          minHeight: '100vh' 
+        }}>
           <Navbar />
-          <main>
+          <main style={{ flex: '1 0 auto', width: '100%' }}>
             <Routes>
               <Route path="/" element={<Inicio />} />
               <Route path="/quienes-somos" element={<QuienesSomos />} />
