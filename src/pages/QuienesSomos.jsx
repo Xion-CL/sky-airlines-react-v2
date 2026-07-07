@@ -140,7 +140,7 @@ const QuienesSomos = () => {
               </div>
 
               <div className="mt-3 text-center">
-                <Link to="/calculadora-edad" className="btn btn-success btn-lg">
+                <Link to="/calculadora" className="btn btn-success btn-lg">
                   🎂 Probar Calculadora de Edad
                 </Link>
               </div>

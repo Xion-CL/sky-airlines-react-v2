@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { AuthProvider } from './hooks/useAuth';
 
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -15,17 +14,16 @@ import Login from './pages/Login';
 import Registro from './pages/Registro';
 import ManualUsuario from './pages/ManualUsuario';
 import Terminos from './pages/Terminos';
-import { AuthProvider } from './hooks/useAuth';
 
 import './styles/App.css';
 
 function App() {
   return (
     <AuthProvider>
-      <Router>
-        <div className="d-flex flex-column min-vh-100">
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
           <Navbar />
-          <main className="flex-grow-1">
+          <main>
             <Routes>
               <Route path="/" element={<Inicio />} />
               <Route path="/quienes-somos" element={<QuienesSomos />} />
