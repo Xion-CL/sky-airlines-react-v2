@@ -1,0 +1,24 @@
+{
+  "reservas": [],
+  "usuarios": [],
+  "vuelos": [
+    {
+      "id": 1,
+      "origen": "Santiago",
+      "destino": "Punta Arenas",
+      "fecha": "2026-08-01",
+      "precioBaseUF": 5.5,
+      "asientosDisponibles": 100,
+      "aerolinea": "Sky Airlines"
+    },
+    {
+      "id": 2,
+      "origen": "Santiago",
+      "destino": "Antofagasta",
+      "fecha": "2026-08-15",
+      "precioBaseUF": 3.2,
+      "asientosDisponibles": 150,
+      "aerolinea": "Sky Airlines"
+    }
+  ]
+}

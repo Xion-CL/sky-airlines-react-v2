@@ -1,0 +1,31 @@
+.form-control:focus,
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: #007bff;
+}
+
+.form-range::-moz-range-thumb {
+  background-color: #007bff;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+/* Validación exitosa */
+.is-valid {
+  border-color: #28a745;
+}
+
+/* Grupos de formulario */
+.form-group {
+  margin-bottom: 1.5rem;
+}

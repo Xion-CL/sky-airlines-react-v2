@@ -1,0 +1,120 @@
+/* ============================================
+   ESTILOS BASE
+   ============================================ */
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   BANNER / CARRUSEL - CON IMÁGENES LOCALES
+   ============================================ */
+.banner-slide {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* IMÁGENES LOCALES - DESCOMENTADO */
+.banner-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('/images/banner1.jpg');
+}
+
+.banner-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('/images/banner2.jpg');
+}
+
+.banner-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+              url('/images/banner3.jpg');
+}
+
+/* Caption del carrusel */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  max-width: 800px;
+  width: 90%;
+  color: white;
+}
+
+.carousel-caption h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Carrusel */
+.carousel-inner {
+  max-height: 600px;
+}
+
+.carousel-item {
+  height: 600px;
+}
+
+/* ============================================
+   FEATURE BOXES
+   ============================================ */
+.feature-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .banner-slide {
+    height: 400px;
+  }
+
+  .carousel-item {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    padding: 1.5rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}

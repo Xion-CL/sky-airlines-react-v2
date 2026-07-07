@@ -1,0 +1,49 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+import Inicio from './pages/Inicio';
+import QuienesSomos from './pages/QuienesSomos';
+import Contacto from './pages/Contacto';
+import Reservas from './pages/Reservas';
+import CotizadorVuelos from './pages/CotizadorVuelos';
+import CalculadoraEdad from './pages/CalculadoraEdad';
+import Login from './pages/Login';
+import Registro from './pages/Registro';
+import ManualUsuario from './pages/ManualUsuario';
+import Terminos from './pages/Terminos';
+import { AuthProvider } from './hooks/useAuth';
+
+import './styles/App.css';
+
+function App() {
+  return (
+    <AuthProvider>
+      <Router>
+        <div className="d-flex flex-column min-vh-100">
+          <Navbar />
+          <main className="flex-grow-1">
+            <Routes>
+              <Route path="/" element={<Inicio />} />
+              <Route path="/quienes-somos" element={<QuienesSomos />} />
+              <Route path="/contacto" element={<Contacto />} />
+              <Route path="/reservas" element={<Reservas />} />
+              <Route path="/cotizador" element={<CotizadorVuelos />} />
+              <Route path="/calculadora" element={<CalculadoraEdad />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/registro" element={<Registro />} />
+              <Route path="/manual" element={<ManualUsuario />} />
+              <Route path="/terminos" element={<Terminos />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </AuthProvider>
+  );
+}
+
+export default App;

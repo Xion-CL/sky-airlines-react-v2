@@ -1,0 +1,46 @@
+/* Cards personalizadas */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Alertas */
+.alert {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Botones */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Loading spinner */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Modal personalizado */
+.modal-content {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.modal-footer {
+  border-top: 2px solid #f0f0f0;
+}
