@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sky-airlines-react-v2/static/css/main.365c8685.css",
-    "main.js": "/sky-airlines-react-v2/static/js/main.d4d36b18.js",
+    "main.css": "/sky-airlines-react-v2/static/css/main.31d9805f.css",
+    "main.js": "/sky-airlines-react-v2/static/js/main.c27faac5.js",
     "static/media/bootstrap-icons.woff?": "/sky-airlines-react-v2/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/bootstrap-icons.woff2?": "/sky-airlines-react-v2/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/sky-airlines-react-v2/index.html",
-    "main.365c8685.css.map": "/sky-airlines-react-v2/static/css/main.365c8685.css.map",
-    "main.d4d36b18.js.map": "/sky-airlines-react-v2/static/js/main.d4d36b18.js.map"
+    "main.31d9805f.css.map": "/sky-airlines-react-v2/static/css/main.31d9805f.css.map",
+    "main.c27faac5.js.map": "/sky-airlines-react-v2/static/js/main.c27faac5.js.map"
   },
   "entrypoints": [
-    "static/css/main.365c8685.css",
-    "static/js/main.d4d36b18.js"
+    "static/css/main.31d9805f.css",
+    "static/js/main.c27faac5.js"
   ]
 }
